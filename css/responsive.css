@@ -1,0 +1,11 @@
+/* ==============================================================================
+   Salad Recipe Catalog - Responsive Helpers (responsive.css)
+   Bootstrap 5 grid handles responsiveness; this file contains small adjustments.
+   ============================================================================== */
+
+@media (max-width: 768px) {
+  .details-img {
+    max-height: 250px;
+    margin-bottom: 1rem;
+  }
+}

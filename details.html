@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salad Recipe Catalog - Recipe Details</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">
+        🥗 Salad Recipe Catalog
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">
+              Favorites <span class="badge bg-light text-dark" id="favorites-badge">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5 bg-white">
+    <div class="container">
+      <!-- Back Link -->
+      <div class="mb-3">
+        <a href="recipes.html" class="text-dark-green fw-bold text-decoration-none">
+          &larr; Back to All Recipes
+        </a>
+      </div>
+
+      <!-- =====================================================================
+           2. DYNAMIC RECIPE DETAILS (POPULATED VIA app.js)
+           ===================================================================== -->
+      <div id="recipe-details">
+        <!-- Rendered dynamically by JavaScript based on ?id=X in URL -->
+        <div class="text-center py-5">
+          <p class="text-muted">Loading recipe details...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       3. FOOTER
+       ========================================================================= -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Salad Recipe Catalog | Web Technologies Mini Project</p>
+      <small class="text-muted">Developed using HTML5, CSS3, JavaScript, and Bootstrap 5</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Files -->
+  <script src="js/recipes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
